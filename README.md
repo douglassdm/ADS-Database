@@ -18,7 +18,7 @@ Para executar o projeto, execute o comando `php artisan serve` no diretório rai
 
 Para alterar o usuário padrão do sistema, você precisa modificar o arquivo de seed `database/seeders/DatabaseSeeder.php`. Por padrão, o sistema cria um usuário com as seguintes credenciais:
 
-- Email: admin@example.com
+- Email: admin@admin.com
 - Senha: 123456
 
 Para criar um novo usuário padrão:
