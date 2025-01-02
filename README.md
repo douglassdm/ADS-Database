@@ -2,6 +2,11 @@
 
 Este é um projeto criado para a turma de Análise e Desenvolvimento de Sistemas. O objetivo é desenvolver uma aplicação web utilizando o framework Laravel.
 
+## Screenshots
+
+![Tela inicial do sistema](/public/images/img1.png)
+![Modal](/public/images/img2.png)
+
 ## Configuração
 
 Para configurar o projeto, é necessário criar um arquivo `.env` com as variáveis de ambiente. Um exemplo de como o arquivo deve ser estruturado pode ser encontrado em `.env.example`.

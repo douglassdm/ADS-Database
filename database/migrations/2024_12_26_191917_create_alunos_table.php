@@ -11,12 +11,12 @@ class CreateAlunosTable extends Migration
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('telefone')->nullable();
             $table->string('image')->nullable();
             $table->text('description')->nullable();
             $table->string('company')->nullable();
-            $table->string('github')->nullable(); // Added github field
+            $table->string('github')->nullable();
             $table->timestamps();
         });
     }
