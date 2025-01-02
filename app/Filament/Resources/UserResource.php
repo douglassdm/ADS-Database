@@ -19,6 +19,12 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
+    //Trandução
+    public static function getModelLabel(): string
+    {
+        return __('User');
+    }
+
     public static function form(Form $form): Form
     {
         return $form
@@ -29,11 +35,17 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('email')
                     ->email()
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->unique(ignoreRecord: true),
                 Forms\Components\TextInput::make('password')
                     ->password()
-                    ->required()
-                    ->maxLength(255),
+                    ->required(fn(string $operation): bool => $operation === 'create')
+                    ->dehydrated(fn(?string $state) => filled($state))
+                    ->confirmed(),
+                Forms\Components\TextInput::make('password_confirmation')
+                    ->password()
+                    ->requiredWith(statePaths: 'password')
+                    ->dehydrated(false),
             ]);
     }
 
