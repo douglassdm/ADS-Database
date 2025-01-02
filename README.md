@@ -12,7 +12,7 @@ Para instalar as dependências do projeto, execute o comando `composer install` 
 
 ## Execução
 
-Para executar o projeto, execute o comando `php artisan serve` no diretório raiz do projeto. A aplicação estará disponível em `http://127.0.0.1:8000`.
+Para executar o projeto, execute o comando `php artisan serve` e `php artisan storage:link` no diretório raiz do projeto. A aplicação estará disponível em `http://127.0.0.1:8000`.
 
 ## Usuário Padrão
 

@@ -52,7 +52,6 @@ class AlunoResource extends Resource
                         Forms\Components\TextInput::make('github')
                             ->label('GitHub')
                             ->prefix('https://')
-                            ->required()
                             ->maxLength(255),
                         
                         Forms\Components\TextInput::make('telefone')

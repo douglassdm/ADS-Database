@@ -716,7 +716,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="/" class="logo">ADS Uninassau</a>
+            <a href="/" class="logo">ADS</a>
         </div>
     </nav>
 
